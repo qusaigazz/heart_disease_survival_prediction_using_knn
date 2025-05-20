@@ -95,12 +95,15 @@ Beyond this, performance plateaued, with slight fluctuations but no further impr
 
 ## **07. Limitations & Future Work**
 1. Small dataset size
+   
 The model was trained and tested on a relatively small dataset of 297 patients, with only 47 records in the test set. This limits the generalizability and reliability of the results.
 
-2. Limited feature set
+3. Limited feature set
+   
 Only three features — age, creatinine phosphokinase (CPK), and ejection fraction (EF) — were used. While clinically meaningful, other important predictors such as serum sodium, time, and platelet count were not included.
 
-3. Binary output without probability
+5. Binary output without probability
+   
 The model only outputs a hard class prediction (0 or 1). Confidence scores or probabilities would provide more nuanced and useful clinical insight.
 
 
