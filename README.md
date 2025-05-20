@@ -9,7 +9,7 @@
 In this project, I build and evaluate a K-Nearest Neighbors (kNN) model to predict patient survival from heart failure, based on real clinical data. The goal is to explore the predictive power of simple yet meaningful features to support early risk assessment in clinical settings.
 
 ## **Table of Content**
-- 00.Project Overview
+- [00.Project Overview]
   - Context
   - Actions
   - Results
