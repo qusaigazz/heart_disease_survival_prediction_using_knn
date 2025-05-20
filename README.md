@@ -82,6 +82,8 @@ This gives a penalty for incorrect predictions, and helps identify which K leads
 
 # **05.Optimal K Selection**
 
+![Figure 1](./images/Figure_1.png)
+
 #**06.Results Discussion**
 
 #**07.Limitations & Future Work**
