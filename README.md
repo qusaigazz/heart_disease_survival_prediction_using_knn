@@ -23,7 +23,7 @@ In this project, I build and evaluate a K-Nearest Neighbors (kNN) model to predi
 - [07. Limitations & Future Work](#07-limitations--future-work)
 
 
-## **00.Project Overview**
+## **00. Project Overview**
 ### Context 
 Accurately identifying high-risk patients can support timely interventions, closer monitoring, and more personalized care planning, ultimately aiming to improve outcomes and resource use in clinical settings.
 
@@ -50,13 +50,13 @@ Larger K values generally improved stability but risked underfitting.
 The model showed clear patterns linking patient age and low EF with increased risk of death, validating the medical relevance of the features used.
 
 
-## **01.Data Overview**
+## **01. Data Overview**
 - Dataset: `heart_data.csv`
 - Records: 297 patients
 - Binary target: `DEATH_EVENT` (0 = survived, 1 = died)
 - Train/Test Split: 250 / 47
 
-## **02.Feature Selection**
+## **02. Feature Selection**
 
 I selected three predictors based on their interpretability and medical relevance:
 
@@ -67,25 +67,25 @@ I selected three predictors based on their interpretability and medical relevanc
 | `ejection_fraction`       | Blood pumped out per beat       | Lower values strongly linked to poor outcomes       |
 
 
-## **03.kNN Algorithm**
+## **03. kNN Algorithm**
 - Implemented manually using Euclidean distance in 3D feature space.
 - For each test point:
   - Calculate distance to all training points.
   - Select the K closest neighbors.
   - Predict the majority class (0 or 1) among those neighbors.
 
-## **04.Model Evaluation (MSE)**
+## **04. Model Evaluation (MSE)**
 I used Mean Squared Error (MSE) as a performance metric:
 
 <img src="./images/mse_formula_black_bg.png" width="300"/>
 
 This gives a penalty for incorrect predictions, and helps identify which K leads to the most accurate predictions on the unseen test set
 
-## **05.Optimal K Selection**
+## **05. Optimal K Selection**
 
 ![Figure 1](./images/Figure_1.png)
 
-## **06.Results Discussion**
+## **06. Results Discussion**
 
 MSE decreased steadily as K increased from 1 to 5, reaching its lowest point at **K = 9**.  
 Beyond this, performance plateaued, with slight fluctuations but no further improvement.
@@ -94,5 +94,5 @@ Beyond this, performance plateaued, with slight fluctuations but no further impr
 - The **lowest MSE** (≈ 0.08) occurred at **K = 9**, suggesting this is the most stable choice for this dataset.
 - The model benefited from the predictive strength of **age** and **ejection fraction (EF)** — both clinically meaningful indicators of heart failure risk.
 
-#**07.Limitations & Future Work**
+#**07. Limitations & Future Work**
 
