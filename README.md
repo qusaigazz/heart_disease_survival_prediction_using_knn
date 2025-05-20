@@ -9,12 +9,12 @@
 In this project, I build and evaluate a K-Nearest Neighbors (kNN) model to predict patient survival from heart failure, based on real clinical data. The goal is to explore the predictive power of simple yet meaningful features to support early risk assessment in clinical settings.
 
 # **Table of Content**
-- [00.Project Overview](#00.ProjectOverview)
-  - [Context](##context)
-  - [Actions](##actions)
-  - [Results](##results)
+- [00.Project Overview](#**00.ProjectOverview**)
+  - [Context](##Context)
+  - [Actions](##Actions)
+  - [Results](##Results)
   - Next Steps
-- [01.Data Overview](#dataoverview)
+- [01.Data Overview](#**01.DataOverview**)
 - [02.Feature Selection](#featureselection)
 - [03.kNN Algorithm](#knnalgorithm)
 - [04.Model Evaluation (MSE)](#modelevaluation(mse))
@@ -22,7 +22,7 @@ In this project, I build and evaluate a K-Nearest Neighbors (kNN) model to predi
 - 06.Results Discussion
 - 07.Limitations & Future Work
 
-# **00. Project Overview**
+# **00.Project Overview**
 ## Context 
 Accurately identifying high-risk patients can support timely interventions, closer monitoring, and more personalized care planning, ultimately aiming to improve outcomes and resource use in clinical settings.
 
@@ -49,13 +49,13 @@ Larger K values generally improved stability but risked underfitting.
 The model showed clear patterns linking patient age and low EF with increased risk of death, validating the medical relevance of the features used.
 
 
-# **01. Data Overview**
+# **01.Data Overview**
 - Dataset: `heart_data.csv`
 - Records: 297 patients
 - Binary target: `DEATH_EVENT` (0 = survived, 1 = died)
 - Train/Test Split: 250 / 47
 
-## **02. Feature Selection**
+## **02.Feature Selection**
 
 I selected three predictors based on their interpretability and medical relevance:
 
@@ -73,7 +73,7 @@ I selected three predictors based on their interpretability and medical relevanc
   - Select the K closest neighbors.
   - Predict the majority class (0 or 1) among those neighbors.
 
-# **04. Model Evaluation (MSE)**
+# **04.Model Evaluation (MSE)**
 I used Mean Squared Error (MSE) as a performance metric:
 
 <img src="./images/mse_formula_black_bg.png" width="300"/>
