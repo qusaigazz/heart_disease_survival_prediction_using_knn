@@ -8,7 +8,7 @@
 
 In this project, I build and evaluate a K-Nearest Neighbors (kNN) model to predict patient survival from heart failure, based on real clinical data. The goal is to explore the predictive power of simple yet meaningful features to support early risk assessment in clinical settings.
 
-## **Table of Content**
+# **Table of Content**
 - [00.Project Overview](#00.ProjectOverview)
   - [Context](##context)
   - [Actions](##actions)
@@ -73,14 +73,14 @@ I selected three predictors based on their interpretability and medical relevanc
   - Select the K closest neighbors.
   - Predict the majority class (0 or 1) among those neighbors.
 
-#**04. Model Evaluation (MSE)**
+# **04. Model Evaluation (MSE)**
 I used Mean Squared Error (MSE) as a performance metric:
 
-MSE = (1/n) × Σᵢ₌₁ⁿ (Yₚᵣₑd,ᵢ − Yₐcₜᵤₐₗ,ᵢ)²
+<img src="./images/mse_formula_black_bg.png" width="300"/>
 
 This gives a penalty for incorrect predictions, and helps identify which K leads to the most accurate predictions on the unseen test set
 
-#**05.Optimal K Selection**
+# **05.Optimal K Selection**
 
 #**06.Results Discussion**
 
