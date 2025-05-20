@@ -13,7 +13,6 @@ In this project, I build and evaluate a K-Nearest Neighbors (kNN) model to predi
   - [Context](#context)
   - [Actions](#actions)
   - [Results](#results)
-  - [Next Steps](#next-steps)
 - [01. Data Overview](#01-data-overview)
 - [02. Feature Selection](#02-feature-selection)
 - [03. kNN Algorithm](#03-knn-algorithm)
@@ -94,5 +93,15 @@ Beyond this, performance plateaued, with slight fluctuations but no further impr
 - The **lowest MSE** (≈ 0.08) occurred at **K = 9**, suggesting this is the most stable choice for this dataset.
 - The model benefited from the predictive strength of **age** and **ejection fraction (EF)** — both clinically meaningful indicators of heart failure risk.
 
-#**07. Limitations & Future Work**
+## **07. Limitations & Future Work**
+1. Small dataset size
+The model was trained and tested on a relatively small dataset of 297 patients, with only 47 records in the test set. This limits the generalizability and reliability of the results.
+
+2. Limited feature set
+Only three features — age, creatinine phosphokinase (CPK), and ejection fraction (EF) — were used. While clinically meaningful, other important predictors such as serum sodium, time, and platelet count were not included.
+
+3. Binary output without probability
+The model only outputs a hard class prediction (0 or 1). Confidence scores or probabilities would provide more nuanced and useful clinical insight.
+
+
 
